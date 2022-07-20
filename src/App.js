@@ -90,12 +90,7 @@ class App extends Component {
 
         snakeDots.forEach(snakeDot => {
             if (snakeHeadX === snakeDot[0] && snakeHeadY === snakeDot[1]) {
-                console.log(snakeHeadX)
-                console.log(snakeHeadY)
-                console.log(snakeDot[0])
-                console.log(snakeDot[1])
-                alert("df")
-                //this.gameIsOver();
+                this.gameIsOver();
             }
         })
     }
@@ -133,7 +128,7 @@ class App extends Component {
 
     gameIsOver() {
         // eslint-disable-next-line no-restricted-globals
-        //location.reload()
+        location.reload()
         this.setState(initailState)
     }
 
